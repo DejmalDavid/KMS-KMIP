@@ -20,6 +20,8 @@ The installation is fully automated via shell scripts modified for Ubuntu 20.04 
 _CAUTION dont lose SSH access to the machine! It is assumed that there is a user "kms" who is in the sudo group and connect only via cert._
 * 02-application.sh - No data is entered here. The script installs and initializes PyKMIP and ETCD and all modifications. During initialization, TLS certificates and passwords are generated for KMIP comunication. Test connection to the ETCD is also included. After completing the script, KMS is already fully functional and ready to handle KMIP requests on the default port 5696 from specific IP (from 01-system.sh (firewall)).
 
+All files in directory Configuration are only for information as configuration looks. They are already content of skripts. Configuration doesn't have to be copied.
+
 **Instalation:**
 1. Copy both directories (APP_scripts and VM_scripts) to the same directory (they refer to each other like ../APP_cripts/). 
    1. You can use clear install Ubuntu server. Server MUST include user "kms"
