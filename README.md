@@ -24,7 +24,9 @@ All files in directory Configuration are only for information as configuration l
 
 **Instalation:**
 1. Copy both directories (APP_scripts and VM_scripts) to the same directory (they refer to each other like ../APP_cripts/). 
-   1. You can use clear install Ubuntu server. Server MUST include user "kms"
+   1. You can use clear install Ubuntu server or your own. Server MUST include user "kms"
+   2. You can download my VM and login via user "kms" and password "Passw0rd" (https://drive.google.com/file/d/1zWQUn4mJJexyxklDVv0zc9chu9nwXTHm/view?usp=sharing)
+1. cd /home/kms/VM_scripts
 1. sudo ./00-network.sh
 1. sudo ./01-system.sh
 1. sudo ./02-application.sh
